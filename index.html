@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html lang="es">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Comptible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Encriptador de Texto</title>
+      <link rel="stylesheet" href="style-en.css">
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <img src="elementos/Vector.png" alt="logo alura" class="logo">
+    </header>
+    <main>
+      <section class="seccion1">
+        <div class="contenedor-caja">
+          <textarea class="caja-texto" id="caja" cols="" rows="" placeholder="Ingresa el texto Aquí"></textarea>
+        </div>
+          <div class="alerta">
+            <img src="elementos/signo.jpg" alt="alerta">
+            <p>Solo letras minúsculas y sin acentos</p>
+          </div>
+          <div class="contenedor-botones">
+            <button id="btnenc" class="btn-encriptar" onclick="
+              encriptar()">Encriptar</button>
+            <button id="btndesenc" class="btn-desencriptar" onclick="desencriptar()">Desencriptar</button>
+          </div>
+      </section>
+      <section class="seccion2">
+        <div class="contenedormunieco">
+         <img src="elementos/Muñeco.jpg" alt="munieco" id="imgm">
+        </div>
+        <div class="contenedor-parrafo">
+          <h3 id="texto1">Ningun mensaje fue <br> encontrado</h3>
+          <textarea id="texto2" name="name" rows="8" cols="80">Ingresa el texto que quieres encriptar o desencriptar</textarea>
+        </div>
+        <div class="contenedor-copiar">
+          <button id="btncop" class="btn-copiar" onclick="btncopiar()">Copiar</button>
+        </div>
+        <div class="contenedor-resultado">
+          <p class="resultado" id="result"></p>  
+        </div>
+      </section>
+    </main>
+<script src="script.js"></script>
+  </body>
+</html>
